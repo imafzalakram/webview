@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.swas.android.R;
 
+
 /**
  * 测试DeepLink打开页面
  */

@@ -13,8 +13,6 @@
     <!-- 选择照片所需权限 -->
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-
-    <!--tencent x5添加-->
     <uses-permission android:name="android.permission.CAMERA" />
 
     <application
@@ -26,11 +24,6 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:ignore="UnusedAttribute">
-        <activity
-            android:name="com.swas.android.MainActivity"
-            android:windowSoftInputMode="adjustPan|stateHidden"
-            android:exported="true">
-        </activity>
 
         <activity
             android:name="com.swas.android.ui.WebViewActivity"
@@ -40,14 +33,11 @@
             android:theme="@style/WebViewTheme"
             tools:ignore="LockedOrientationActivity" />
 
-
-        <!--用于DeepLink，html跳到此页面  scheme_Adr: 'will://link/testid',-->
         <activity
             android:name="com.swas.android.ui.DeepLinkActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
-
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
 
@@ -55,14 +45,12 @@
                     android:host="link"
                     android:scheme="will" />
             </intent-filter>
-            <!--配置多个data-->
+
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
-
                 <category android:name="android.intent.category.DEFAULT" />
                 <category android:name="android.intent.category.BROWSABLE" />
 
-                <!--可以只配置一个scheme，也可以唤起来-->
                 <data
                     android:host="jingbin.me"
                     android:path="/deeplink"

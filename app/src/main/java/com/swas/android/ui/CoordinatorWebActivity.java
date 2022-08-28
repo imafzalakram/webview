@@ -18,13 +18,14 @@ import android.webkit.WebView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.swas.android.MainActivity;
+
 import com.swas.android.R;
 import com.swas.android.config.MyJavascriptInterface;
 import com.swas.android.utils.StatusBarUtil;
 import com.swas.android.utils.WebTools;
 import com.swas.android.view.NestedScrollWebView;
 import com.google.android.material.appbar.AppBarLayout;
+
 
 import me.jingbin.web.ByWebTools;
 import me.jingbin.web.ByWebView;
@@ -259,9 +260,9 @@ public class CoordinatorWebActivity extends AppCompatActivity {
      */
     public void handleFinish() {
         supportFinishAfterTransition();
-        if (!MainActivity.isLaunch) {
-            MainActivity.start(this);
-        }
+//        if (!MainActivity.isLaunch) {
+//            MainActivity.start(this);
+//        }
     }
 
     @Override

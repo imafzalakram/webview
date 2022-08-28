@@ -29,7 +29,7 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.swas.android.MainActivity;
+
 import com.swas.android.R;
 import com.swas.android.config.FullscreenHolder;
 import com.swas.android.config.IWebPageView;
@@ -40,6 +40,8 @@ import com.swas.android.config.WebProgress;
 import com.swas.android.utils.CheckNetwork;
 import com.swas.android.utils.StatusBarUtil;
 import com.swas.android.utils.WebTools;
+
+
 
 /**
  * 网页可以处理:
@@ -413,9 +415,9 @@ public class WebViewActivity extends AppCompatActivity implements IWebPageView {
      */
     public void handleFinish() {
         supportFinishAfterTransition();
-        if (!MainActivity.isLaunch) {
-            MainActivity.start(this);
-        }
+//        if (!MainActivity.isLaunch) {
+//            MainActivity.start(this);
+//        }
     }
 
     /**

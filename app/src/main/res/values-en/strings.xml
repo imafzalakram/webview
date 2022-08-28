@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">WebClient</string>
+    <string name="app_name">SWAS</string>
 
     <string name="action_update">update</string>
     <string name="action_about">about</string>

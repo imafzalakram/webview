@@ -27,7 +27,6 @@ import android.widget.FrameLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.swas.android.MainActivity;
 import com.swas.android.R;
 import com.swas.android.config.FullscreenHolder;
 import com.swas.android.config.MyJavascriptInterface;
@@ -391,14 +390,9 @@ public class X5WebViewActivity extends AppCompatActivity implements IX5WebPageVi
         }
     }
 
-    /**
-     * 直接通过三方浏览器打开时，回退到首页
-     */
+
     public void handleFinish() {
         supportFinishAfterTransition();
-        if (!MainActivity.isLaunch) {
-            MainActivity.start(this);
-        }
     }
 
     /**
